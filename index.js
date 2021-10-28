@@ -70,6 +70,9 @@ app.get('/', async(req, res) => {
     res.send('Running Geninus Server')
 })
 
+app.get('/hello', (req, res) =>{
+    res.send('hello update here')
+})
 app.listen(port, () => {
     console.log('Running Genius Server on port', port)
 })
